@@ -1,0 +1,124 @@
+---
+import Starburst from "../components/icons/Starburst.astro";
+import AE from "../components/icons/AE.astro";
+import YouTube from "../components/YouTube.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="section-heading">
+					<Starburst />
+					<h2>Section One</h2>
+				</div>
+				<p>
+					This section was written by a man who knows what he's doing
+					and has definitely never been bitten by a moose. Special
+					thanks to the assistant night-watchman of the Bolivian
+					Ministry of Silly Walks, who provided neither assistance nor
+					walks but did supply the biscuits. All rights reserved,
+					except the ones that weren't, which is most of them.
+				</p>
+				<p>
+					The producers would like to apologize for the previous
+					paragraph. It was written during a period of high humidity
+					and low biscuit availability, and does not reflect the views
+					of the management, the under-management, or the surprisingly
+					opinionated tea trolley on the third floor.
+				</p>
+			</section>
+			<section>
+				<div class="section-heading">
+					<AE />
+					<h2>Section Two</h2>
+				</div>
+				<p>
+					No llamas were consulted in the making of this section,
+					though three did submit written comments, all of which said
+					"splendid." The font was chosen after a rigorous process
+					involving a blindfold, a dartboard, and a strongly worded
+					letter from the typographer's second cousin, who remains at
+					large.
+				</p>
+				<p>
+					This section is dedicated to everyone who has ever filled
+					out a form in triplicate only to be told the correct form is
+					a completely different form, also in triplicate, available
+					from a window that is only open on alternate Tuesdays during
+					a leap year. You are not alone. You are, however, in the
+					wrong queue.
+				</p>
+			</section>
+			<section>
+				<h2>Section Three</h2>
+				<YouTube id="8v-O9B-UYUc" title="Section Three Video" />
+				<p>
+					The knights who say "Ni" have reviewed this section and
+					found it satisfactory, pending the addition of one
+					shrubbery. The shrubbery has been ordered but is currently
+					delayed due to unforeseen circumstances involving a very
+					small cart, an overly ambitious hedgehog, and the ongoing
+					reorganization of the entire shrubbery logistics department.
+				</p>
+				<p>
+					In conclusion, nobody expected this section to exist, least
+					of all the Spanish Inquisition, whose chief weapons are
+					surprise, fear, ruthless efficiency, and an almost fanatical
+					devotion to accurate page margins. All measurements are
+					approximate. The page is not responsible for any
+					disappointment experienced while reading to this point.
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		min-height: 100vh;
+	}
+
+	body {
+		background: linear-gradient(to bottom, #0a0a0a 0%, #2e2e2e 100%);
+		color: #e8e8e8;
+		font-family: system-ui, sans-serif;
+	}
+
+	main {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	section {
+		border: 1px solid #aaaaaa;
+		border-radius: 12px;
+		padding: 2rem;
+	}
+
+	.section-heading {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 1rem;
+	}
+
+	.section-heading h2 {
+		margin: 0;
+	}
+</style>

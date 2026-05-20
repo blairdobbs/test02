@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp *)",
+      "Bash(npm --version)",
+      "Bash(pnpm --version)",
+      "mcp__astro-docs__search_astro_docs"
+    ]
+  }
+}
