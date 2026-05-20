@@ -14,7 +14,6 @@
   "dependencies": {
     "@astrojs/vercel": "^10.0.7",
     "astro": "^6.3.5",
-    "lite-youtube-embed": "^0.3.4",
-    "plyr": "^3.8.4"
+    "lite-youtube-embed": "^0.3.4"
   }
 }
