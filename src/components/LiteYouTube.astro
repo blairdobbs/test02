@@ -1,0 +1,35 @@
+---
+interface Props {
+	id: string;
+	title?: string;
+	poster?: string;
+	params?: string;
+}
+const {
+	id,
+	title = 'YouTube video',
+	poster,
+	params = 'rel=0',
+} = Astro.props;
+---
+
+<lite-youtube
+	videoid={id}
+	playlabel={`Play: ${title}`}
+	params={params}
+	style={poster ? `background-image: url('${poster}');` : ''}
+></lite-youtube>
+
+<style>
+	@import 'lite-youtube-embed/src/lite-yt-embed.css';
+
+	lite-youtube {
+		width: 100%;
+		max-width: 100%;
+		border-radius: 2px;
+	}
+</style>
+
+<script>
+	import 'lite-youtube-embed/src/lite-yt-embed.js';
+</script>
