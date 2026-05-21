@@ -41,4 +41,17 @@ const {
 
 <script>
 	import 'lite-youtube-embed/src/lite-yt-embed.js';
+
+	const isTouchDevice = navigator.maxTouchPoints > 0 || 'ontouchstart' in window;
+
+	if (isTouchDevice) {
+		document.querySelectorAll('lite-youtube').forEach((el) => {
+			el.addEventListener('click', (e) => {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+				const id = el.getAttribute('videoid');
+				window.open(`https://www.youtube.com/watch?v=${id}`, '_blank');
+			}, true);
+		});
+	}
 </script>
